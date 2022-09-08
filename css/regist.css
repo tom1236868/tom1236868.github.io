@@ -1,0 +1,55 @@
+html,
+body {
+  width: 100%;
+  max-height: 100%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#signup_screen{
+  position: relative;
+  opacity: 0.9;
+  width: 70%;
+  margin: 0 auto; 
+  margin-top: 20px;
+  animation: slide_in;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+#signup_screen .form-control{
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+#singup_button{
+  opacity: 1.0;
+  margin-top: 10px;
+}
+
+@keyframes slide_in{
+  from{
+    top: 5%;
+    opacity: 0.0;
+  }
+  to{
+    top: 0%;
+    opacity: 0.9;
+  }
+}
+
+#custom-alert {
+  top: 10px;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+  position: fixed;
+}
+
+.form-control {
+  text-align: left;
+}

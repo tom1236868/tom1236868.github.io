@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#leftinfo #pic{
+  position: relative;
+  max-width: 120%;
+  height: 100%;
+  left: -20px;
+}
+
+#loginscreen{
+  background-color: #f0f0f0;
+}
+
+#loginscreen #title{
+  position: relative;
+  margin-top:25%;
+  margin-bottom: 10px;
+}
+
+#loginscreen .form-control{
+  position: relative;
+  padding: 10px;
+}
+
+#loginscreen input[type = "email"]{
+  margin-bottom: 10px;
+}
+
+#loginscreen input[type = "password"]{
+  margin-bottom: 10px;
+}
+
+#loginscreen button[type = "button"]{
+  width: 90%;
+}
+
+
+
+#loginscreen #other{
+  position: relative;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+#loginscreen #google_button{
+  width: 50%;
+}
+
+#loginscreen #facebook_button{
+  width: 50%;
+}
+
+#custom-alert {
+  top: 10px;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+  position: fixed;
+}
