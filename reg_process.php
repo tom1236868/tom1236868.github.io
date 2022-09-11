@@ -16,7 +16,12 @@
     session_start();
     $_SESSION['Accounts_Name'][$_POST['ID']] = $_POST['Username'];
     $_SESSION['Accounts_Email'][$_POST['ID']] = $_POST['Email'];
-    $_SESSION['Accounts_Age'][$_POST['ID']] = $_POST['Age'];
+
+    $date = new DateTime($_POST['birthday']);
+    $now = new DateTime();
+    $age = $now->diff($date);
+
+    $_SESSION['Accounts_Age'][$_POST['ID']] = $age->y;
     header('Location: signin.php');
     ?>
 </body>

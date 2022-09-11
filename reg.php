@@ -52,7 +52,8 @@
     </nav>
     <div class="jumbotron" id="signup_screen">
         <form id="regist" name="regist" method="post" action="./reg_process.php">
-            <h3 id="title">現在就加入 Inno Dance!</h3>
+            <h3 id="title">現在就加入 Inno Danz!</h3>
+            <p class="text-muted">加入 Inno Danz ， 讓報名更簡單</p>
             <br>
             <div class="mb-3 text-left">
                 <label for="inputUsername" class="form-label">姓名:</label>
@@ -67,8 +68,8 @@
                 <input type="email" name="Email" id="inputEmail" class="form-control" placeholder="example@hotmail.com" required>
             </div>
             <div class="mb-3 text-left">
-                <label for="inputage" class="form-label">年齡:</label>
-                <input type="text" name="Age" id="inputage" class="form-control" placeholder="23" required>
+                <label for="inputage" class="form-label">生日:</label>
+                <input type="date" name="birthday" id="inputbirthday" class="form-control" placeholder="1987/11/23" required>
             </div>
             <div class="mb-3 text-left">
                 <p class="text-left">性別:</p>
