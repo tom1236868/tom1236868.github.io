@@ -36,11 +36,11 @@ if (!isset($_SESSION['Username'])) {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <?php
-                                    if (isset($_SESSION['Username'])) {
-                                        echo  '哈囉，' . $_SESSION['Username'];
-                                    } else {
-                                        echo  '功能';
-                                    }
+                                if (isset($_SESSION['Username'])) {
+                                    echo  '哈囉，' . $_SESSION['Username'];
+                                } else {
+                                    echo  '功能';
+                                }
                                 ?>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -79,13 +79,13 @@ if (!isset($_SESSION['Username'])) {
             <a data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></a>
             <button class="btn btn-info btn-floating btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_player" aria-controls="offcanvas_player">
                 <img src="assets/newPlayer.png" style="width:20px;height:20px;"> </img>
-                參賽者資訊
+                舞伴資訊
             </button>
         </div>
         <div class="position-fixed top-50 end-0 p-2">
             <button class="btn btn-info btn-floating btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#selectedModal" aria-controls="selectedModal">
                 <img src="assets/dance.png" style="width:20px;height:20px;"> </img>
-                已選組別
+                確認已選組別及報名
             </button>
         </div>
 
@@ -375,6 +375,9 @@ if (!isset($_SESSION['Username'])) {
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class = "position-relative">
+                    <button type="button" class="btn btn-success position-absolute top-0 end-0" data-bs-dismiss="offcanvas" aria-label="Close">完成</button>
                 </div>
             </div>
         </div>
